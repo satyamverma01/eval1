@@ -1,0 +1,16 @@
+def add_details(name :str,ID:int,department:str,salary:float):
+    employee[name]={
+        'ID':ID,
+        'Dept':department,
+        'Salary':salary
+    }
+    print("Data of employee added successfully")
+def update(name:str,newID:int):
+    if name in employee:
+        employee[name]['ID']=newID
+        print("DEtails Updated Successfully")
+def searchForEmp(ID:int):
+    if ID==employee['ID']:
+        print("Employee   Found")
+    else:
+        print("Employee not  found")
